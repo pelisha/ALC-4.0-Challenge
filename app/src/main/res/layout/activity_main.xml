@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Welcome to ALC 4.0"
+        android:textAlignment="center"
+        android:textAppearance="?attr/actionBarTabTextStyle"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:paddingBottom="10dp"
+        tools:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="ABOUT ALC"
+        android:textSize="24sp"
+        android:onClick="ActivityB"
+        app:layout_constraintEnd_toEndOf="@+id/textView_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_title"
+        tools:clickable="true" />
+
+    <Button
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:fontFamily="sans-serif-condensed"
+        android:linksClickable="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="MY PROFILE"
+        android:textSize="24sp"
+        android:onClick="ActivityC"
+        app:layout_constraintEnd_toEndOf="@+id/button_about"
+        app:layout_constraintStart_toStartOf="@+id/button_about"
+        app:layout_constraintTop_toBottomOf="@+id/button_about"
+        tools:clickable="true" />
+
+</android.support.constraint.ConstraintLayout>
